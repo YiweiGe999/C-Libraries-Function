@@ -16,7 +16,7 @@ u32 Strlen(const char* str)
 
 }
 
-/* String concatenation.*/
+/* Strings concatenation.*/
 char* Strcat(char* dest, char* src, u32 u32Size)
 {
 	char* ret = dest;    
