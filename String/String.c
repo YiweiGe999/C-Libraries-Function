@@ -3,16 +3,16 @@
 #include "String.h"
 
 /* Calculate the size of a string.*/
-u32 Strlen(const char* kpcStr)
+u32 Strlen(const char* str)
 {
-	u32 u32Ret = 0;
+	u32 ret = 0;
 
-	while (*kpcStr++)
+	while (*str++)
 	{
-		u32Ret++;
+		ret++;
 	}
 
-	return u32Ret;
+	return ret;
 
 }
 
