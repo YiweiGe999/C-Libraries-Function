@@ -2,6 +2,21 @@
 
 #include "String.h"
 
+/* Calculate the size of a string.*/
+u32 Strlen(const char* kpcStr)
+{
+	u32 u32Ret = 0;
+
+	while (*kpcStr++)
+	{
+		u32Ret++;
+	}
+
+	return u32Ret;
+
+}
+
+/* String concatenation.*/
 char* Strcat(char* dest, char* src, u32 u32Size)
 {
 	char* ret = dest;    
@@ -30,7 +45,7 @@ char* Strcat(char* dest, char* src, u32 u32Size)
 	return ret;            
 }
 
-
+/* Compare two strings.*/
 int Strcmp(const char *str1, const char *str2)
 {
 	int ret = 0;
